@@ -9,12 +9,10 @@ function rollDice(){
         const value = Math.floor(Math.random()*6)+1;
         values.push(value);
         const img = document.createElement("img");
-        img.src = `${value}.png`;
+        img.src = `dice_images/${value}.png`;
         img.alt = `Dice ${value}`;
         diceImages.appendChild(img);
         images.push(img);
     }
     diceResult.textContent = `You rolled: ${values.join(", ")}`;
-
 }
-
